@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router'
-import { Gamepad2, LayoutDashboard, Headset, Settings2 } from 'lucide-react'
+import { Gamepad2, LayoutDashboard, Headset, Settings2, Music } from 'lucide-react'
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Inicio' },
   { to: '/minigames', icon: Gamepad2, label: 'Minijuegos' },
+  { to: '/youtubeoverlay', icon: Music, label: 'YouTube' },
   { to: '/soporte', icon: Headset, label: 'Soporte' },
   { to: '/ajustes', icon: Settings2, label: 'Ajustes' },
 ]

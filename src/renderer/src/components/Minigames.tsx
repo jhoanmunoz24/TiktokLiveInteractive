@@ -1,8 +1,10 @@
 import MiniGameCard from './MiniGameCard'
-
 import { getImage } from '../assets/index'
+import { useNavigate } from 'react-router'
 
 const Minigames = () => {
+  const navigate = useNavigate()
+
   const games = [
     {
       id: 1,
@@ -10,9 +12,13 @@ const Minigames = () => {
       description: 'El chat Maneja la reproducción de tu música en Youtube',
       status: 'valid',
       img: getImage('reproducer_img.png'),
-      link: 'youtubeoverlay',
     },
   ]
+
+  const handleGameClick = () => {
+    navigate('/youtubeoverlay')
+  }
+
   return (
     <div className="px-5 flex flex-col gap-9">
       <div>
@@ -23,14 +29,18 @@ const Minigames = () => {
       </div>
 
       {games.map((game) => (
-        <MiniGameCard
+        <div
           key={game.id}
-          title={game.title}
-          description={game.description}
-          status={game.status}
-          img={game.img}
-          link={game.link}
-        />
+          onClick={handleGameClick}
+          className="cursor-pointer"
+        >
+          <MiniGameCard
+            title={game.title}
+            description={game.description}
+            status={game.status}
+            img={game.img}
+          />
+        </div>
       ))}
     </div>
   )
