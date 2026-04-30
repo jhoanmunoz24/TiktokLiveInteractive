@@ -11,7 +11,8 @@ body {
   background-color: var(--color-surface-container-lowest);
 }
 
-input, textarea {
+input,
+textarea {
   -webkit-user-select: text;
   user-select: text;
 }

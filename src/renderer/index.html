@@ -6,7 +6,7 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+      content="default-src 'self' https://www.youtube.com http://www.youtube.com https://googlevideo.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.youtube.com http://www.youtube.com https://googlevideo.com; frame-src https://www.youtube.com http://www.youtube.com https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com; connect-src 'self' https://www.youtube.com http://www.youtube.com"
     />
   </head>
 
