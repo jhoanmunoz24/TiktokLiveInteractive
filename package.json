@@ -26,6 +26,7 @@
     "@ghostery/adblocker-electron": "^2.14.3",
     "@tailwindcss/vite": "^4.2.4",
     "axios": "^1.16.0",
+    "cross-fetch": "^4.1.0",
     "lucide-react": "^1.11.0",
     "plyr": "^3.8.4",
     "plyr-react": "^6.0.0",
